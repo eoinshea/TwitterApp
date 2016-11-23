@@ -13,7 +13,7 @@ group :development, :test do
 end
 group :development do
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  #gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
@@ -25,9 +25,9 @@ gem 'pg'
 gem 'therubyracer', :platform=>:ruby
 group :development do
   gem 'better_errors'
-  gem 'guard-bundler'
-  gem 'guard-rails'
-  gem 'guard-rspec'
+  ##em 'guard-bundler'
+  #gem 'guard-rails'
+  #gem 'guard-rspec'
   gem 'hub', :require=>nil
   gem 'rails_layout'
   gem 'rb-fchange', :require=>false
@@ -38,14 +38,20 @@ end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'pry-rails'
+  #gem 'pry-rails'
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
 end
 group :test do
+  gem 'rspec'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'vcr'
 end
+
+
+
+gem 'tweetstream'
