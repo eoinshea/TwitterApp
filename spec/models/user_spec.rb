@@ -10,4 +10,10 @@ describe User do
     expect(@user.email).to match 'user@example.com'
   end
 
+  it 'should be associated with many hastags or accounts'
+
+  it 'should have a username'
+
+  it ''
+
 end

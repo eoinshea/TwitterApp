@@ -1,10 +1,10 @@
 require 'tweetstream'
-require_relative "../config/environment.rb"
-class TwitterStream
+class TwitterStreamService
 
 
   def initialize
-    @logger  = Logger.new('twitter_stream.log')
+    @logger  = Logger.new('log/twitter_stream.log')
+
     ##
     # Initialize client with tokens taken from twitter API
     @client =  TweetStream.configure do |config|
@@ -17,19 +17,22 @@ class TwitterStream
   end
 
   def run
-    @client.new.track('MUFC') do |status|
-        puts "#{status.text}"
-        @logger.info status.to_s
-      end
+    #Track all chosen
+    @client.new.track('BITCOIN') do |status|
+      puts "#{status.text}"
     end
+
+
+
+  rescue => e
+    @logger.error e.to_s
+    @logger.error e.backtrace
+
+# No mater what happens restart the rn method!
+    TwitterStream.new.run
   end
-
-  # Restart Run method if exited due to a client.stop
-
-rescue => e
-  @logger.error e.to_s
-  @logger.error e.backtrace
-
-  # No mater what happens restart the rn method!
-  TwitterStream.new.run
 end
+
+
+private
+
