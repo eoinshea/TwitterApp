@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @twitter_account.content %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @twitter_account.name %>
+</p>
+
+<p>
+  <strong>Profile image:</strong>
+  <%= @twitter_account.profile_image %>
+</p>
+
+<%= link_to 'Edit', edit_twitter_account_path(@twitter_account) %> |
+<%= link_to 'Back', twitter_accounts_path %>

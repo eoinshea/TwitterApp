@@ -53,9 +53,9 @@ group :test do
   gem 'selenium-webdriver'
   gem 'vcr'
   gem 'webmock'
-  gem 'vcr'
 end
 
 gem 'sidekiq'
 
+# Twitter REst API
 gem 'tweetstream'

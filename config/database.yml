@@ -19,7 +19,7 @@ development:
   database: TwitterApp_development
   pool:     5
   username: manchester
-  password: manutd
+  password: man324
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -47,7 +47,7 @@ test:
   database: TwitterApp_test
   pool:     5
   username: manchester
-  password: manutd
+  password: man324
   template: template0
 
 production:
@@ -57,5 +57,5 @@ production:
   database: TwitterApp_production
   pool:     5
   username: manchester
-  password: manutd
+  password: man324
   template: template0

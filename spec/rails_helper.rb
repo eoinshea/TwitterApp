@@ -69,9 +69,7 @@ end
 RSpec.configure do |config|
 #config.filter_run focus: true
   config.infer_spec_type_from_file_location!
-  config.include Paperclip::Shoulda::Matchers
   config.include Devise::TestHelpers, type: :controller
-  config.include FeatureHelpers
   config.include Capybara::DSL
   config.include FactoryGirl::Syntax::Methods
   config.fixture_path = "#{::Rails.root}/spec/fixtures"

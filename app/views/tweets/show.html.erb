@@ -1,18 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Username:</strong>
-  <%= @tweet.username %>
-</p>
-
-<p>
-  <strong>Profile pic:</strong>
-  <%= @tweet.profile_pic %>
-</p>
-
-<p>
   <strong>Content:</strong>
   <%= @tweet.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @tweet.image %>
 </p>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
