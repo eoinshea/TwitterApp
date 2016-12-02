@@ -40,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
+    annotate (2.7.1)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 12.0)
     arel (7.1.4)
     ast (2.3.0)
     autoprefixer-rails (6.5.3)
@@ -348,6 +351,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -380,6 +384,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   sidekiq
+  simplecov
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
