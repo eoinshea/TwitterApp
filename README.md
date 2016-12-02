@@ -1,7 +1,6 @@
-Twitterapp
-================
+TwitterStreaming App
 
-TwitterApp for people to see tweets and charts
+Twitter App for people to see tweets and charts
 
 Ruby on Rails
 -------------
